@@ -71,7 +71,6 @@ public class TerminateProcess implements Command, Reoccurring {
         String forDeployment = (String) ctx.getData("ForDeployment");
 
         Map<String, Object> parameters = new HashMap<>();
-        // parameters.put("now", new Date());
         StringBuilder lookupQuery = new StringBuilder();
 
         lookupQuery.append("select log from ProcessInstanceLog log where log.status=1");
